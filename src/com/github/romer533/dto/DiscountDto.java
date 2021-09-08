@@ -1,4 +1,4 @@
-package dto;
+package com.github.romer533.dto;
 
 public class DiscountDto {
 

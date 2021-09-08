@@ -1,4 +1,6 @@
-import domain.Shop;
+package com.github.romer533;
+
+import com.github.romer533.domain.Shop;
 
 public class Main {
     public static void main(String[] args) {
