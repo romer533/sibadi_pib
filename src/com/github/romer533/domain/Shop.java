@@ -8,43 +8,35 @@ import java.util.ArrayList;
 
 public class Shop {
 
-    private ArrayList<ProductDto> products = new ArrayList<>();
-    private ArrayList<BuyerDto> buyers = new ArrayList<>();
-    private ArrayList<DiscountDto> discounts = new ArrayList<>();
+    private final ArrayList<ProductDto> products;
+    private final ArrayList<BuyerDto> buyers;
+    private final ArrayList<DiscountDto> discounts = new ArrayList<>();
 
     public Shop(ArrayList<ProductDto> products, ArrayList<BuyerDto> buyers) {
         this.products = products;
         this.buyers = buyers;
     }
 
-    public Shop(ArrayList<ProductDto> products, ArrayList<BuyerDto> buyers, ArrayList<DiscountDto> discounts) {
-        this.products = products;
-        this.buyers = buyers;
-        this.discounts = discounts;
+    public void randomDiscount(int percent) {
+        int length = this.products.size();
+        int product = length / 2;
+        if (!checkDiscount(product)) {
+            this.discounts.add(new DiscountDto(this.products.get(product), percent));
+            System.out.println("Today discount on: " + this.products.get(product));
+        } else
+            System.out.println("Discount already exists");
+    }
+
+    private boolean checkDiscount(int product) {
+        return this.discounts.stream().anyMatch(v -> v.getProduct().equals(products.get(product)));
     }
 
     public ArrayList<ProductDto> getProducts() {
         return products;
     }
 
-    public void setProducts(ArrayList<ProductDto> products) {
-        this.products = products;
-    }
-
     public ArrayList<BuyerDto> getBuyers() {
         return buyers;
-    }
-
-    public void setBuyers(ArrayList<BuyerDto> buyers) {
-        this.buyers = buyers;
-    }
-
-    public ArrayList<DiscountDto> getDiscounts() {
-        return discounts;
-    }
-
-    public void setDiscounts(ArrayList<DiscountDto> discounts) {
-        this.discounts = discounts;
     }
 
 }

@@ -12,10 +12,12 @@ public class BuyerDto {
         this.age = age;
     }
 
-    public BuyerDto(String name, int age, int money) {
-        this.name = name;
-        this.age = age;
-        this.money = money;
+    public String getName() {
+        return name;
+    }
+
+    public void setMoney(int amount) {
+        this.money = money + amount;
     }
 
     @Override
