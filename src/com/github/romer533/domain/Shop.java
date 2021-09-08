@@ -12,28 +12,6 @@ public class Shop {
     private ArrayList<BuyerDto> buyers = new ArrayList<>();
     private ArrayList<DiscountDto> discounts = new ArrayList<>();
 
-    private void defaultProducts() {
-        this.products.add(new ProductDto("milk", 65, 5));
-        this.products.add(new ProductDto("bread", 30, 4));
-        this.products.add(new ProductDto("chips", 100, 3));
-    }
-
-    private void defaultBuyers() {
-        this.buyers.add(new BuyerDto("Raynur", 21));
-        this.buyers.add(new BuyerDto("Yuriy", 30));
-        this.buyers.add(new BuyerDto("Roman", 21, 1000));
-    }
-
-    public Shop() {
-        defaultProducts();
-        defaultBuyers();
-    }
-
-    public Shop(ArrayList<ProductDto> products) {
-        this.products = products;
-        defaultBuyers();
-    }
-
     public Shop(ArrayList<ProductDto> products, ArrayList<BuyerDto> buyers) {
         this.products = products;
         this.buyers = buyers;
@@ -49,24 +27,24 @@ public class Shop {
         return products;
     }
 
-    public void addProduct(ProductDto product) {
-        this.products.add(product);
+    public void setProducts(ArrayList<ProductDto> products) {
+        this.products = products;
     }
 
     public ArrayList<BuyerDto> getBuyers() {
         return buyers;
     }
 
-    public void addBuyer(BuyerDto buyer) {
-        this.buyers.add(buyer);
+    public void setBuyers(ArrayList<BuyerDto> buyers) {
+        this.buyers = buyers;
     }
 
     public ArrayList<DiscountDto> getDiscounts() {
         return discounts;
     }
 
-    public void addDiscount(DiscountDto discount) {
-        this.discounts.add(discount);
+    public void setDiscounts(ArrayList<DiscountDto> discounts) {
+        this.discounts = discounts;
     }
 
 }
