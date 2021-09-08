@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class Shop {
 
-    private ArrayList<ProductDto> products = new ArrayList<ProductDto>();
-    private ArrayList<BuyerDto> buyers = new ArrayList<BuyerDto>();
-    private ArrayList<DiscountDto> discounts = new ArrayList<DiscountDto>();
+    private ArrayList<ProductDto> products = new ArrayList<>();
+    private ArrayList<BuyerDto> buyers = new ArrayList<>();
+    private ArrayList<DiscountDto> discounts = new ArrayList<>();
 
     private void defaultProducts() {
         this.products.add(new ProductDto("milk", 65, 5));
@@ -46,7 +46,6 @@ public class Shop {
     }
 
     public ArrayList<ProductDto> getProducts() {
-        products.stream().map(v -> v.toString());
         return products;
     }
 

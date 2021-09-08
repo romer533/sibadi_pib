@@ -2,8 +2,9 @@ package dto;
 
 public class BuyerDto {
 
-    private String name;
-    private int age;
+    private final String name;
+    private final int age;
+
     private int money = 500;
 
     public BuyerDto(String name, int age) {

@@ -2,9 +2,9 @@ package dto;
 
 public class ProductDto {
 
-    private String name;
-    private int price;
-    private int number;
+    private final String name;
+    private final int price;
+    private final int number;
 
     public ProductDto(String name, int price, int number) {
         this.name = name;
