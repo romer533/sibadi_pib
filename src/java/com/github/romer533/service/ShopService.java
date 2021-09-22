@@ -1,10 +1,10 @@
-package com.github.romer533.service;
+package java.romer533.service;
 
-import com.github.romer533.domain.Shop;
-import com.github.romer533.dto.BuyerDto;
-import com.github.romer533.dto.CheckDto;
-import com.github.romer533.dto.ProductDto;
-import com.github.romer533.dto.ReportDto;
+import java.romer533.domain.Shop;
+import java.romer533.dto.BuyerDto;
+import java.romer533.dto.CheckDto;
+import java.romer533.dto.ProductDto;
+import java.romer533.dto.ReportDto;
 
 import java.util.stream.Collectors;
 

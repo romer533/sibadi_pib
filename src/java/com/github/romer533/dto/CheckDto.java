@@ -1,4 +1,4 @@
-package com.github.romer533.dto;
+package java.romer533.dto;
 
 public class CheckDto {
 

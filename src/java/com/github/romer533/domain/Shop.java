@@ -1,8 +1,8 @@
-package com.github.romer533.domain;
+package java.romer533.domain;
 
-import com.github.romer533.dto.BuyerDto;
-import com.github.romer533.dto.DiscountDto;
-import com.github.romer533.dto.ProductDto;
+import java.romer533.dto.BuyerDto;
+import java.romer533.dto.DiscountDto;
+import java.romer533.dto.ProductDto;
 
 import java.util.ArrayList;
 
