@@ -1,9 +1,9 @@
-package com.github.romer533;
+package com.github.romer533.java;
 
-import com.github.romer533.domain.Shop;
-import com.github.romer533.dto.BuyerDto;
-import com.github.romer533.dto.ProductDto;
-import com.github.romer533.service.ShopService;
+import com.github.romer533.java.domain.Shop;
+import com.github.romer533.java.dto.BuyerDto;
+import com.github.romer533.java.dto.ProductDto;
+import com.github.romer533.java.service.ShopService;
 
 import java.util.ArrayList;
 
